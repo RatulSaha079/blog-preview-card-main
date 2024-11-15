@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .figtree {
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    p{
+      font-size: 16px;
+    }
+    .main-container{
+      width: 100%;
+      height: 100vh;
+      background-color: hsl(47, 88%, 63%);
+      position: relative;      
+    }
+    .sub-container{
+      width: 300px;
+      height: 400px;
+      background-color: hsl(0, 0%, 100%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid black;
+      border-radius: 12px;
+      box-shadow: 10px 10px black;
+    }
+    .img-container{
+      height: 40%;
+      width: 100%;
+      padding: 15px;
+    }
+    .img-container img{
+      height: 100%;
+      width: 100%;
+    }
+    .doc-container{
+      height: 60%;
+      padding: 15px;
+    }
+    .doc-container button{      
+      background-color: hsl(47, 88%, 63%);
+      border: none;
+      text-align: center;      
+      font-weight: 600;
+      padding: 5px 10px;   
+      border-radius: 3px;   
+      transition-duration: 0.4s;
+    }
+    button:hover{
+      background-color: hsl(0, 0%, 42%);
+      color: hsl(0, 0%, 100%)
+    }
+    .doc-container button, p, h3{
+      margin-bottom: 12px;
+    }
+    .developer-container{
+      width: 100%;
+      height: 40px;
+      display: flex;      
+      display: flex;
+      align-items: center;
+    }
+    .avatar{
+      height: 30px;
+      width: 30px;    
+      background-image: url("./assets/images/image-avatar.webp");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .developer-name{
+      height: 30px;
+      width: 100px;
+      margin-left: 15px;    
+      font-size: 15px; 
+      font-weight: 600;
+      position: relative;
+      top: 5px;
+    }
+    .developer-container:hover {
+      border: 2px solid black;
+      box-shadow: 2px 2px hsl(0, 0%, 7%);
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="sub-container">
+      <div class="img-container">
+        <img src="./download.png" alt="">
+      </div>
+      <div class="doc-container">
+        <button>Learning</button>
+
+        <p>Published 15 Nov 2024</p>
+
+        <h3>HTML & CSS foundations</h3>
+
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+        <div class="developer-container">
+          <div class="avatar"></div>
+          <div class="developer-name">Greg Hooper</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ratul Saha</a>.
+  </div>
+</body>
+</html>
